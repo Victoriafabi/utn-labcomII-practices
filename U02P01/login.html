@@ -1,0 +1,32 @@
+<!---#5 - Crear formulario de inicio de sesión
+En un archivo aparte, llamado login.html, crear la estructura básica de un documento HTML que servirá de página de inicio de sesión. La misma debe incluir:
+ Un título (h1) descriptivo de la página.
+ Una breve explicación de los pasos a seguir para iniciar sesión.
+ Un formulario que incluya un campo de texto y un campo de clave. Un botón para enviar el formulario.
+ Un checkbox para recordar los datos del usuario.-->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <head>
+            <h1 style="color: blueviolet;">"¡Bienvenidos a nuestra plataforma de cursos en línea!" </h1>
+            <h2>Iniciar sesión</h2>
+            <hr>
+            <p>Ingresa tu nombre de usuario o dirección de correo electrónico en el campo correspondiente. Luego, ingresa tu contraseña en el campo de contraseña.</p>
+            
+        </head>
+
+        <form action="/accion.php" method="post">
+            <label for="usuario">Usuario/Correo electrónico:</label><br>
+            <input type="text" id="usuario" name="usuario"><br>
+            
+            <label for="password">Contraseña:</label><br>
+            <input type="password" id="password" name="password"><br>
+            
+            <input type="checkbox" id="recordar" name="recordar">
+            <label for="recordar">Recordar datos</label><br>
+            
+            <input type="submit" value="Iniciar Sesión">
+        </form>
+    </body>
+    </html>
